@@ -7,3 +7,9 @@ def home(request):
 
 def videos(request):
     return render(request, 'videos/videos.html')
+
+def songs(request):
+    return render(request, 'songs/songs.html')
+
+def movies(request):
+    return render(request, 'movies/movies.html')
