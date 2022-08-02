@@ -11,11 +11,13 @@
 {% block content %}
 <div class="container">
     <h1>Register</h1>
+    <br>
     <form action="" method="post">
         {% csrf_token %}
         {{ form }}
         <button type="submit" class="btn btn-success">Enter</button>
+        <br>
+        <a href="/">Did you remember your account? Login here</a>
     </form>
-    <a href="/">Did you remember your account? Login</a>
 </div>
 {% endblock content %}

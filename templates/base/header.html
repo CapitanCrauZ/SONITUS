@@ -8,7 +8,7 @@
 
         <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
           <li>
-            <a href="#" class="nav-link text-secondary">
+            <a href="/home/" class="nav-link text-secondary">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
               Home
             </a>
@@ -20,9 +20,9 @@
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
+            <a href="/home/videos" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-              Orders
+              Videos
             </a>
           </li>
           <li>
@@ -38,16 +38,29 @@
             </a>
           </li>
           <li>
-            <a href="/" class="nav-link log">
+            {% if user.is_authenticated %}
+              <a href="{% url 'logout' %}" class="nav-link out">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                Logout
+              </a>
+              <li>
+                <a href="/profile" class="nav-link profile">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                  Profile
+                </a>
+              </li>
+            {% else %}
+              <a href="/" class="nav-link log">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                 Login
-            </a>
-          </li>
-          <li>
-            <a href="/register" class="nav-link register">
-                <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
-                Sign-up
-            </a>
+              </a>
+              <li>
+                <a href="/register" class="nav-link register">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
+                    Sign-up
+                </a>
+              </li>
+            {% endif %}
           </li>
         </ul>
       </div>

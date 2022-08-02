@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def register(request):
@@ -48,6 +49,7 @@ def out(request):
     logout(request)
     return redirect('/')
     #POST
+@login_required
 def profile(request):
     #GET
     if request.user.is_authenticated:

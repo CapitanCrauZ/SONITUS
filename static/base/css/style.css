@@ -27,8 +27,16 @@ footer{
     color: blueviolet;
 }
 
+.nav-link.out{
+    color: red;
+}
+
 .nav-link.register{
-    color: rgb(190, 205, 50);
+    color: goldenrod;
+}
+
+.nav-link.profile{
+    color: greenyellow;
 }
 
 .text-end a{
@@ -46,5 +54,12 @@ footer{
 @media only screen and (max-height: 600px){
     .main{
         height: 150vh;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .justify-content-between{
+        flex-wrap: wrap;
+        justify-content: center !important;
     }
 }
