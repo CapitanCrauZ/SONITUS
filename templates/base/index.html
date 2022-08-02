@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sonitus Web-Application">
+    <!-- Css -->
+    {% block css %}
+    {% endblock css %}
+    <!-- Title -->
+    {% block title %}
+    {% endblock title %}
+</head>
+<body>
+    <header>
+        {% include "base/header.html" %}
+    </header>
+    <main class="main">
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer>
+        {% include "base/footer.html" %}
+    </footer>
+</body>
+</html>
