@@ -18,6 +18,11 @@ header{
     width: 100%;
 }
 
+footer{
+    display: flex;
+    width: 100%;
+}
+
 .nav-link.log{
     color: blueviolet;
 }
