@@ -1,7 +1,33 @@
+*{
+    margin: 0;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-link.log{
+    color: blueviolet;
+}
+
+.nav-link.register{
+    color: rgb(190, 205, 50);
+}
+
+.text-end a{
+    text-decoration: none;
 }
 
 .main{
@@ -10,4 +36,10 @@ body{
     align-items: center;
     width: 80%;
     height: 80vh;
+}
+
+@media only screen and (max-height: 600px){
+    .main{
+        height: 150vh;
+    }
 }
