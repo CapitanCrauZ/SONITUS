@@ -1,0 +1,30 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+form button{
+    background-color: rgb(41, 41, 100);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+form button:hover{
+    background-color: rgb(44, 44, 150);
+}
+
+h1{
+    align-self: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+}
+
+

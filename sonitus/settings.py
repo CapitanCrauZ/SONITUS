@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from lib2to3.pytree import Base
 from pathlib import Path
 from os.path import join
 
@@ -109,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-cl'
 
 TIME_ZONE = 'UTC'
 
@@ -125,7 +124,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = join(BASE_DIR, 'static')
+STATIC_ROOT = join(BASE_DIR, 'static', 'static_root')
+
+STATICFILES_DIRS = [join(BASE_DIR, 'static')]
 
 #Media
 
