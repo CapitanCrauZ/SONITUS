@@ -18,6 +18,10 @@ header{
     width: 100%;
 }
 
+.px-3.py-2.text-bg-dark{
+    width: 100%;
+}
+
 footer{
     display: flex;
     width: 100%;
