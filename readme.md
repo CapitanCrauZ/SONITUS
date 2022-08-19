@@ -1,3 +1,4 @@
-Sonitus Web-Application
+# Sonitus Web Application
 
-Developer: CapitanCrauZ
+### Developer
+- CapitanCrauZ
