@@ -128,9 +128,9 @@ STATIC_ROOT = join(BASE_DIR, 'static', 'static_root')
 
 STATICFILES_DIRS = [join(BASE_DIR, 'static')]
 
-#Media
+# Media
 
-MEDIA_URL = '/'
+MEDIA_URL = '/media/'
 
 MEDIA_ROOT = join(BASE_DIR, 'media')
 

@@ -51,6 +51,10 @@ footer{
     height: 80vh;
 }
 
+.nav.col-md-4.justify-content-end.list-unstyled.d-flex{
+    padding-right: 20px;
+}
+
 @media only screen and (max-height: 600px){
     .main{
         height: 150vh;
